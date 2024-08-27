@@ -76,7 +76,7 @@ inum=1;
 for (i = 2; i < 25; i = i + 1) {
     for (j = 1; j < i; j = j + 1) {
         console.log(i, j)
-        if (i % j != 0 && j!=1) {
+        if (i % j != 0 || j==1) {
             n = i;
             l = j;
 
