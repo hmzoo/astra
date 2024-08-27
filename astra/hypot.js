@@ -34,7 +34,7 @@ hypot.build=(n,l,ec,s)=>{
         let t=(i/steps)*2*PI*l;
         const x = ((a - b) * Math.cos(t) + c * Math.cos((a - b) / b * t))/max;
         const y = ((a - b) * Math.sin(t) - c * Math.sin((a - b) / b * t))/max;
-        console.log(x,y,a,b,c);
+       // console.log(x,y,a,b,c);
         results.push({t,x,y})
     }
     hypot.data=results;
@@ -46,7 +46,7 @@ hypot.svg=()=>{
 }
 
 hypot.json=()=>{
-    return JSON.stringify(hypot);
+    return JSON.stringify(hypot, null, 2);
 }
 
 module.exports= hypot ;

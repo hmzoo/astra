@@ -17,6 +17,6 @@
   "homepage": "https://github.com/hmzoo/astra#readme",
   "description": "",
   "dependencies": {
-    "@svgdotjs/svg.js": "^3.2.4"
+    "sharp": "^0.33.5"
   }
 }
