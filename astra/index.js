@@ -6,14 +6,14 @@ let circle=()=>{
     results=[];
     for(let i=0;i<steps;i=i+1){
         let zi= String(i).padStart(5, '0');
-        let a=(i/steps)*2*PI;
+        let a=(i/steps)*2*PI*2;
         let x= Math.cos(a);
         let y=Math.sin(a);
         results.push({zi,a,x,y})
     }
     return results;
 }
-// a est le rayon du cercle fixe
+// a est le rayon du cercle fixe -> 1
 // b est le rayon du cercle mobile
 // d est la distance du point traçant au centre du cercle mobile
 let hypot=(b,d)=>{
@@ -21,7 +21,7 @@ let hypot=(b,d)=>{
     results=[];
     for(let i=0;i<steps;i=i+1){
         let zi= String(i).padStart(5, '0');
-        let t=(i/steps)*2*PI;
+        let t=(i/steps)*2*PI*2;
         const x = (a - b) * Math.cos(t) + d * Math.cos((a - b) / b * t);
         const y = (a - b) * Math.sin(t) - d * Math.sin((a - b) / b * t);
         console.log(x,y,a,b,d);
