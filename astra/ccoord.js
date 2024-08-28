@@ -2,10 +2,10 @@ const hypot=require('./hypot.js')
 
 
 let ccoord = {
-    xmin:0.8,
-    xmax:1.2,
-    ymin:0.8,
-    ymax:1.2,
+    xmin:0.6,
+    xmax:1.4,
+    ymin:0.6,
+    ymax:1.4,
     data:[]
 }
 
