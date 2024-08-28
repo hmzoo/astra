@@ -14,13 +14,14 @@ ccoord.conv = (t) => {
     ccoord.data = []
     let xr = (ccoord.xmax - ccoord.xmin)/2;
     let yr = (ccoord.ymax - ccoord.ymin)/2;
+    let n=0;
     t.forEach((o) => {
-      
+        n=n+1;
 
         let x = ccoord.xmin+xr + o.x * xr;
         let y = ccoord.ymin+yr + o.y * yr;
         console.log(o.x,o.y,xr,yr,x,y)
-        ccoord.data.push({ x, y });
+        ccoord.data.push({n, x, y });
     })
 
 }
